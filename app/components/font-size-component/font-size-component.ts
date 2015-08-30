@@ -1,28 +1,25 @@
 import {Component, View, FORM_DIRECTIVES, EventEmitter} from 'angular2/angular2';
 
 @Component({
-  selector: 'font-size-component',
-  properties: [
-    'fontSize'
-  ],
-  events: [
-    'fontSizeChanged'
-  ]
+    selector: 'font-size-component',
+    properties: ['fontSize'],
+    events: ['fontSizeChange']
 })
 @View({
-  template: `<input id="fontSize" class="form-control" name="fontSize" [ng-model]="fontSize" (input)="onNewFontSize($event.target.value)"/>`,
-  directives: [
-    FORM_DIRECTIVES
-  ]
+    template: `
+      <input id="fontSize" [(ng-model)]="fontSizeModel"/>
+    `,
+    directives: [FORM_DIRECTIVES]
 })
-
 export class FontSizeComponent {
+    fontSize: string;
+    fontSizeChange = new EventEmitter();
 
-  constructor() {
+    get fontSizeModel() {
+      return this.fontSize;
+    }
 
-  }
-  fontSizeChanged = new EventEmitter();
-  onNewFontSize(value) {
-    this.fontSizeChanged.next(value);
-  }
+    set fontSizeModel(value) {
+      this.fontSizeChange.next(value);
+    }
 }

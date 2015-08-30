@@ -18,8 +18,8 @@ class App {
     this.fontColor = "#444444";
     this.fontSize = "16";//{ 'fontSize': "16" };
   }
-  fontSizeChanged() {
-    console.log('444');
+  fontSizeChanged(value) {
+    console.log(value);
   }
 }
 
