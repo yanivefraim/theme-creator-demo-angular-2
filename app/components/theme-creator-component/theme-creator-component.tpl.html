@@ -1,0 +1,21 @@
+<!-- <div class="left-sidebar">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Edit your Theme</h3>
+    </div>
+    <div class="panel-body">
+      <theme-editor-panel-component on-font-size-change="ctrl.onFontSizeChange(fontSize)" on-font-color-change="ctrl.onFontColorChange(fontColor)" on-font-family-change="ctrl.onFontFamilyChange(fontFamily)" font-size="{{ctrl.fontSize}}" font-family="{{ctrl.fontFamily}}" font-color="{{ctrl.fontColor}}"></theme-editor-panel-component>
+    </div>
+  </div>
+</div>
+<div class="main panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Preview</h3>
+  </div>
+  <div class="panel-body">
+    <theme-preview-panel-component font-size="{{ctrl.fontSize}}" font-family="{{ctrl.fontFamily}}" font-color="{{ctrl.fontColor}}"></theme-preview-panel-component>
+  </div>
+</div>
+ -->
+       <theme-editor-panel-component (on-font-size-change)="onFontSizeChange($event)" [font-size]="fontSize"></theme-editor-panel-component>
+
