@@ -4,7 +4,8 @@ import {Component, View, NgModel} from 'angular2/angular2';
   selector: 'font-color-component',
   properties: [
     'fontColor'
-  ]
+  ],
+  events: ['fontColorChanged']
 })
 @View({
   template: `<input id="fontColor" class="form-control" name="fontColor" [ng-model]="fontColor"/>`,
