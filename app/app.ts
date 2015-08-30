@@ -16,7 +16,7 @@ class App {
   font: any;
   constructor() {
     this.fontColor = "#444444";
-    this.fontSize = "16";//{ 'fontSize': "16" };
+    this.fontSize = "22";//{ 'fontSize': "16" };
   }
   // fontSizeChanged(value) {
   //   console.log(value);
