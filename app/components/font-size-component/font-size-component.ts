@@ -1,4 +1,4 @@
-import {Component, View, FORM_DIRECTIVES, EventEmitter} from 'angular2/angular2';
+import {Component, View, EventEmitter, FORM_DIRECTIVES} from 'angular2/angular2';
 
 @Component({
   selector: 'font-size-component',

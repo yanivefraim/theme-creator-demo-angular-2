@@ -1,6 +1,7 @@
 import {Component, View, EventEmitter} from 'angular2/angular2';
 import {FontSizeComponent} from '../font-size-component/font-size-component';
 import {FontColorComponent} from '../font-color-component/font-color-component';
+import {FontFamilyComponent} from '../font-family-component/font-family-component';
 
 @Component({
   selector: 'theme-editor-panel-component',
@@ -9,7 +10,7 @@ import {FontColorComponent} from '../font-color-component/font-color-component';
 })
 @View({
   templateUrl: '../components/theme-editor-panel-component/theme-editor-panel-component.tpl.html',
-  directives: [FontSizeComponent, FontColorComponent]
+  directives: [FontSizeComponent, FontColorComponent, FontFamilyComponent]
 })
 export class ThemeEditorPanelComponent {
   onFontSizeChange: EventEmitter = new EventEmitter();

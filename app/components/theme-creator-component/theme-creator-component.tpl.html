@@ -17,6 +17,6 @@
   </div>
 </div>
  -->
-       <theme-editor-panel-component (on-font-size-change)="onFontSizeChange($event)" [font-size]="fontSize" (on-font-color-change)="onFontColorChange($event)" [font-color]="fontColor"></theme-editor-panel-component>
-       <theme-preview-panel-component [font-size]="fontSize" [font-color]="fontColor"></theme-preview-panel-component>
+       <theme-editor-panel-component (on-font-size-change)="onFontSizeChange($event)" [font-size]="fontSize" (on-font-color-change)="onFontColorChange($event)" [font-color]="fontColor" (on-font-family-change)="onFontFamilyChange($event)" [font-family]="fontFamily"></theme-editor-panel-component>
+       <theme-preview-panel-component [font-size]="fontSize" [font-color]="fontColor" [font-family]="fontFamily"></theme-preview-panel-component>
 

@@ -1,7 +1,7 @@
 <div class="control-group">
   <label class="control-label">Font Family</label>
   <div class="controls">
-    <!-- <font-family-component font-family="{{ctrl.fontFamily}}" font-family-changed="ctrl.onFontFamilyChangeEvent(fontFamily)"></font-family-component> -->
+    <font-family-component [font-family]="fontFamily" (font-family-change)="onFontFamilyChangeEvent($event)"></font-family-component>
   </div>
 </div>
 <div class="control-group">
