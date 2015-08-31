@@ -13,10 +13,13 @@ import {ThemeCreatorComponent} from './components/theme-creator-component/theme-
 })
 class App {
   fontColor: string;
+  fontSize: string;
+  fontFamily: string;
   font: any;
   constructor() {
-    this.fontColor = "#444444";
-    this.fontSize = "22";//{ 'fontSize': "16" };
+    this.fontColor = "red";
+    this.fontSize = "22";
+    this.fontFamily = "Ariel";
   }
   // fontSizeChanged(value) {
   //   console.log(value);

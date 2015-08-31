@@ -7,7 +7,7 @@ import {Component, View, FORM_DIRECTIVES, EventEmitter} from 'angular2/angular2'
 })
 @View({
   template: `
-    <input id="fontColor" [ng-model]="fontColorModel" (input)="fontColorChange.next($event.target.value)"/>
+    <input id="fontColor" [ng-model]="fontColor" (input)="fontColorChange.next($event.target.value)"/>
   `,
   directives: [FORM_DIRECTIVES]
 })
