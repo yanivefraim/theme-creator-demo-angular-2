@@ -13,7 +13,7 @@ import {Component, View, EventEmitter, FORM_DIRECTIVES} from 'angular2/angular2'
 })
 export class FontSizeComponent {
   fontSize: string;
-  fontSizeChange = new EventEmitter();
+  fontSizeChange: EventEmitter = new EventEmitter();
 
   get fontSizeModel() {
     return this.fontSize;
