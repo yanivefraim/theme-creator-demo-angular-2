@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
 
-    <title>{{ page.title }}</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <title>Hello World!</title>
+    
+    <meta name="author" content="Name Lastname">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
-      <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
+      <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
     <![endif]-->
 
 
@@ -27,30 +28,73 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <a class="navbar-brand" href="/">Jekyll Bootstrap-3</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/docs.html">Docs</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
           </ul>
         </div>
       </div>
     </nav>
     <section>
-      <h1>{{ site.projectname }}</h1>
+      <h1>This is Project Name</h1>
       <a>Download</a>
       <a>Docs</a>
       <a>Ref</a>
     </section>
     <div class="container">
-      {{ content }}
+      
+<div class="page-header">
+  <h1>Hello World!  <small>Supporting tagline</small></h1>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+      
+<p>This is the main md file!!</p>
+
+  </div>
+</div>
+
+
       <hr>
       <footer>
         <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+          &copy; 2015 Name Lastname
           <span class="pull-right text-muted">
             powered by
             <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
@@ -60,8 +104,10 @@
       </footer>
     </div>
 
-    {% include JB/analytics %}
-    <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
+    
+
+    <script src="/assets/themes/bootstrap/resources/jquery/jquery.min.js"></script>
+    <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
+

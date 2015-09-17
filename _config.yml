@@ -8,9 +8,12 @@ highlighter: pygments
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
+
+
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
+projectname : This is Project Name
 title : Jekyll Bootstrap-3
 tagline: Site Tagline
 author :
@@ -108,7 +111,7 @@ JB :
         tracking_id : 'UA-***'
         property_name : 'PROPERTY NAME'
     getclicky :
-      site_id : 
+      site_id :
     mixpanel :
         token : '_MIXPANEL_TOKEN_'
     piwik :
@@ -133,4 +136,4 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
+
