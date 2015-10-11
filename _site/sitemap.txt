@@ -2,6 +2,7 @@
 http://username.github.io/atom.xml
 http://username.github.io/docs.html
 http://username.github.io/downloads.html
+http://username.github.io/docs/getting-started.html
 http://username.github.io/index.html
 http://username.github.io/playground.html
 http://username.github.io/rss.xml
