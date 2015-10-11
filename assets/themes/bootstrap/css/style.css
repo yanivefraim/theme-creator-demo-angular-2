@@ -3,6 +3,46 @@
   margin: 0 auto;
   max-width: 700px; }
 
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.project-strip {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 960px) {
+  .project-strip {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.home-section {
+  margin: 50px 0;
+}
+
+.project-strip h1,
+.project-strip p,
+.project-strip ul {
+  text-align: center;
+}
+
+.project-strip ul {
+  list-style-type: none;
+  margin-top: 60px;
+  padding-left: 0;
+}
+
+.project-strip li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+}
+
 .container-narrow > hr {
   margin: 30px 0; }
 
@@ -63,3 +103,7 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+.main-page-content p {
+  margin-bottom: 50px;
+}

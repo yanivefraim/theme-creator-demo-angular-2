@@ -10,6 +10,8 @@
 
     <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="{{ BASE_PATH }}/assets/themes/bootstrap/css/style.css" rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
     <![endif]-->
@@ -18,8 +20,8 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container">
+    <nav class="navbar navbar-default" role="navigation" style="background-color: {{ site.navbar.background }}">
+      <div class="container-narrow">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -27,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <a class="navbar-brand" href="{{ HOME_PATH }}" style="color: {{ site.navbar.project_color }}">{{ site.title }}</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -39,26 +41,19 @@
         </div>
       </div>
     </nav>
-    <section>
-      <h1>{{ site.projectname }}</h1>
-      <a class="btn btn-default">Download</a>
-      <a class="btn btn-default">Docs</a>
-      <a class="btn btn-default">Ref</a>
-    </section>
-    <div class="container">
-      {{ content }}
-      <hr>
-      <footer>
-        <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          <span class="pull-right text-muted">
-            powered by
-            <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
-            and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>
-          </span>
-        </p>
-      </footer>
-    </div>
+
+    {{ content }}
+    <hr>
+    <footer>
+      <p>
+        &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+        <span class="pull-right text-muted">
+          powered by
+          <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
+          and <a href="http://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>
+        </span>
+      </p>
+    </footer>
 
     {% include JB/analytics %}
     <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>

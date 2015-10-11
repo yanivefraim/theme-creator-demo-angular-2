@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jekyll Bootstrap-3</title>
+ <title>Demo Project</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2015-09-17T18:04:54+03:00</updated>
+ <updated>2015-10-11T17:59:24+03:00</updated>
  <id>http://username.github.io</id>
  <author>
    <name>Name Lastname</name>

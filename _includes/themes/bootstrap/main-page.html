@@ -1,0 +1,46 @@
+<section class="project-strip-wrapper" style="background-color: {{ site.project_strip.background }}; color: {{site.project_strip.color}}">
+  <div class="container-narrow project-strip">
+    <h1 style="color: {{ site.project_strip.title_color }}">{{ site.projectname }}</h1>
+    <p>{{ site.projectname_description }}</p>
+    <ul>
+      <li><a class="btn btn-default">Download</a></li>
+      <li><a class="btn btn-default">Docs</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="container-narrow">
+
+  <!-- <div class="page-header">
+    <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+  </div> -->
+  <section class="home-section">
+    <div class="row">
+    <!-- https://github.com/rustygeldmacher/jekyll-contentblocks#usage -->
+    <!-- $ gem install jekyll-contentblocks + require "jekyll-contentblocks" inside plugins-->
+
+    {% assign rows = 4 %}
+    {% ifnothascontent home-section-3 %}
+      {% assign rows = 6 %}
+    {% endifnothascontent %}
+    {% ifnothascontent home-section-2 %}
+      {% assign rows = 12 %}
+    {% endifnothascontent %}
+
+    <div class="col-md-{{rows}}">
+<p>{% contentblock home-section-1 %}</p>
+    </div>
+    <div class="col-md-{{rows}}">
+<p>{% contentblock home-section-2 %}</p>
+    </div>
+    <div class="col-md-{{rows}}">
+<p>{% contentblock home-section-3 %}</p>
+    </div>
+  </div>
+  </section>
+  <div class="row container-narrow main-page-content">
+    <div class="col-xs-12">
+        {{ content }}
+    </div>
+  </div>
+</div>
