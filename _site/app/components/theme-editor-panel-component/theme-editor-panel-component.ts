@@ -5,8 +5,8 @@ import {FontFamilyComponent} from '../font-family-component/font-family-componen
 
 @Component({
   selector: 'theme-editor-panel-component',
-  inputs: ['fontSize', 'fontColor', 'fontFamily'],
-  outputs: ['onFontColorChange', 'onFontSizeChange', 'onFontFamilyChange']
+  properties: ['fontSize', 'fontColor', 'fontFamily'],
+  events: ['onFontColorChange', 'onFontSizeChange', 'onFontFamilyChange']
 })
 @View({
   templateUrl: '../components/theme-editor-panel-component/theme-editor-panel-component.tpl.html',

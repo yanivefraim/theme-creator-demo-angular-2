@@ -4,7 +4,7 @@ import {ThemePreviewPanelComponent} from '../theme-preview-panel-component/theme
 
 @Component({
   selector: 'theme-creator-component',
-  inputs: ['fontSize', 'fontColor', 'fontFamily']
+  properties: ['fontSize', 'fontColor', 'fontFamily']
 })
 @View({
   templateUrl: '../components/theme-creator-component/theme-creator-component.tpl.html',

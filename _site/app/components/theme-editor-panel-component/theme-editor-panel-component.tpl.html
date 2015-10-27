@@ -1,0 +1,19 @@
+<div class="control-group">
+  <label class="control-label">Font Family</label>
+  <div class="controls">
+    <font-family-component [font-family]="fontFamily" (font-family-change)="onFontFamilyChangeEvent($event)"></font-family-component>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="fontColor">Font Color</label>
+  <div class="controls">
+    <font-color-component [font-color]="fontColor" (font-color-change)="onFontColorChangeEvent($event)"></font-color-component>
+  </div>
+</div>
+<div class="control-group">
+  <label class="control-label" for="fontSize">Font Size</label>
+  <div class="controls">
+    <font-size-component [font-size]="fontSize" (font-size-change)="onFontSizeChangeEvent($event)"></font-size-component>
+  </div>
+</div>
+
